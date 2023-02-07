@@ -1,0 +1,13 @@
+baseURL = 'https://SALMAGHAREEB.ME/'
+languageCode = 'en-us'
+title = 'Salma Ghareeb'
+theme = 'lynx'
+
+[author]
+   name = "Salma Ghareeb"
+
+  links = [
+     { email = "mailto:salmahghareeb@gmail.com" },
+     { github = "https://github.com/SalmaGhareeb" },
+     { linkedin = "https://www.linkedin.com/in/salmahabdelhady/" },
+  ]
