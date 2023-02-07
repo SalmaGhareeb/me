@@ -1,4 +1,4 @@
-baseURL = 'https://salmaghareeb.me'
+baseURL = 'https://salmaghareeb.me/'
 languageCode = 'en-us'
 title = 'Salma Ghareeb'
 theme = 'lynx'
