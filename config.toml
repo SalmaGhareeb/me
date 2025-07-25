@@ -1,25 +1,53 @@
 baseURL = 'https://SALMAGHAREEB.ME/'
 languageCode = 'en-us'
 title = 'Salma Ghareeb'
-theme = 'lynx'
+theme = 'anubis2'
 
-disableKinds = ["taxonomy", "term"]
+[pagination]
+pagerSize = 5
 
-[author]
- name = "Salma Ghareeb"
- image = "author.jpg"
+[params.author]
+name = "Salma Ghareeb"
+email = "salmaghareeb@gmail.com"
+location = "Berlin"
 
-links = [
-     { email = "mailto:salmahghareeb@gmail.com" },
-     { github = "https://github.com/SalmaGhareeb" },
-     { linkedin = "https://www.linkedin.com/in/salmahabdelhady/" }
-]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
 
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
 
+# [[menu.main]]
+# identifier = "tags"
+# name = "Tags"
+# url = "/tags/"
+# weight = 3
+
+# [[menu.main]]
+# name = "Archive"
+# identifier = "archive"
+# url = "/posts/"
+# weight = 4
+
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
 
 [markup.highlight]
-  noClasses = false
+style = 'catppuccin-frappe' # Find more style at here: https://swapoff.org/chroma/playground/
 
-[markup.goldmark]
-[markup.goldmark.renderer]
-  unsafe = true
+[params.anubis2]
+enableSummary = true
+
+socialIcons = [
+    { id = "github", url = "https://github.com/SalmaGhareeb" },
+    { id = "linkedin", url = "https://www.linkedin.com/in/salmahabdelhady/" },
+    { id = "email", url = "salmaghareeb@gmail.com" },
+]
+
+# Leave all parameters empty to use the default values.
